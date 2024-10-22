@@ -19,18 +19,10 @@ This project is designed to manage and search for film data efficiently. It feat
 - **HTML/CSS**: For structuring and styling the web pages, providing a user-friendly interface.
 - **JavaScript**: For enhancing client-side interactivity and managing AJAX requests.
 
-## Installation
-
-*No installation instructions included in this document.*
 
 ## Usage
 
 Upon accessing the application, users can register or log in to their accounts. Once logged in, they can search for films, with results displayed in real-time as they type.
 
-## Contributing
 
-Contributions to this project are welcome. Please submit a pull request or open an issue for any enhancements or bug fixes.
 
-## License
-
-This project is licensed under the [Your License Name].
