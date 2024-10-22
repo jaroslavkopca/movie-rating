@@ -1,0 +1,1775 @@
+
+
+
+:root {
+    --color1: #1a2238;
+    --color2: #9daaf2;
+    --color3: #ff6a3d;
+    --color4: #f4db7d;
+}
+
+html, body {
+    background-color: var(--color4);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    /*background-image: url("images/background.png");*/
+}
+
+
+/*colors : svetla var(--color4  Oranz var(--color3  Seda var(--color2  tmava var(--color1*/
+
+/*NAVBAR ALL PAGES*/
+.navbar {
+    background-color: var(--color1);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.navbar_list {
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    order: 2;
+}
+
+.navbar_list li {
+    display: inline-block;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.navbar_list li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    font: bold 16px sans-serif;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar_list li a:hover {
+    background: var(--color3);
+    border-radius: 20px;
+}
+
+
+.imageInNavbar{
+    display: inline-flex;
+    align-items: center;
+    order: 1;
+    margin-left: 6px;
+}
+
+
+
+.imageInNavbarUser {
+    display: inline-flex;
+    align-items: center;
+    order: 1;
+    margin-left: 6px;
+    margin-right: 6px;
+    width: min-content;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.imageInNavbar img, .imageInNavbarUser img {
+    height: 80%;
+    max-height: 66px;
+}
+
+.navbar_search {
+    display: inline-flex;
+    align-items: center;
+    order: 3;
+    margin: auto;
+
+}
+
+.navbar_search div{
+    display: flex;
+    width: 28vw;
+}
+
+#searcherror{
+    display: flex;
+    justify-content: center;
+
+}
+
+#livesearch{
+    position: absolute;
+    top: 51px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color1);
+    background-color: var(--color1);
+}
+
+#livesearch div{
+    flex-direction: column;
+}
+
+#livesearch a{
+    text-decoration: none;
+}
+
+.name_film_serachbar{
+    font-size: 2em;
+    font-family: sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.category_film_searchbar, .locationandinfo_film_serachbar{
+    font-size: 1em;
+    font-family: sans-serif;
+    margin: 0;
+    margin-top: 5px;
+    color: white;
+}
+
+
+
+
+#searchbar {
+    width: 100%;
+    border: 3px solid var(--color3);
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+#searchbar:focus {
+    color: #414548;
+}
+
+.searchButton {
+    width: 40px;
+    border: 1px solid var(--color3);
+    background: var(--color3);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchButton img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+.logRegButtons {
+    display: flex;
+    float: right;
+    order: 4;
+    position: relative;
+    margin-left: auto;
+    min-width: 206px;
+}
+
+.logRegButtons a {
+    font: bold 16px sans-serif;
+    text-decoration: none;
+    background-color: var(--color3);
+    margin-right: 12px;
+    color: white;
+    padding: 2px 6px 2px 6px;
+    position: static;
+    height: min-content;
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+.logRegButtons a:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+    opacity: .85;
+}
+
+.logRegButtons a:active {
+    outline: 0;
+}
+
+.logRegButtons a:focus {
+    box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+/*Small Navbar*/
+.dropdown {
+    position: relative;
+    display: none;
+    order: 2;
+    height: 66px;
+    align-items: center;
+}
+
+.dropdownbtn {
+    background-color: var(--color3);
+    color: white;
+    margin-left: 16px;
+    font: bold 16px sans-serif;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    height: min-content;
+    border-radius: 8px;
+}
+
+.dropdown-content {
+    list-style-type: none;
+    text-align: center;
+    top: 50px;
+    display: none;
+    position: absolute;
+    left: -40px;
+    background-color: var(--color1);
+    min-width: 160px;
+    z-index: 1;
+    padding-left: 0;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.dropdown-content li a {
+    font: bold 16px sans-serif;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li a:hover {
+    background-color: var(--color3);
+}
+
+.dropdown:hover .dropdown-content {
+    display: table-header-group;
+}
+
+.dropdown:hover ul {
+    max-height: 200px;
+}
+
+/*DARKMODE TLACITKO*/
+.DarkMode {
+    position: absolute;
+    top: 46px;
+    left: 161px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 12px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    border: 2px solid var(--color3);
+}
+
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    background-color: var(--color3);
+    top: 0px;
+    left: 0px;
+    transition: all 0.5s;
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 41%;
+}
+
+.DarkMode span {
+    position: absolute;
+    left: -77px;
+    bottom: -3px;
+    font: bold 13px sans-serif;
+    color: white;
+}
+
+.checkbox:checked + .toggle::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 13px;
+    background-color: var(--color3);
+    top: 0px;
+    left: 15px;
+    transition: all 0.5s;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 41%;
+}
+
+.checkbox:checked + .toggle {
+    background-color: var(--color1);
+}
+
+.checkbox {
+    display: none;
+}
+
+/*
+<=============================================================================================>
+
+
+
+_________________________________ MAIN PAGE________________________________
+
+
+<==============================================================================================>
+*/
+
+.ObsahMainPage {
+    width: 80%;
+    margin: 0 auto;
+    height: 80%;
+    min-height: 960px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ObsahMainPage h2{
+    font-size: 3em;
+    font-family: sans-serif;
+    color: white;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color1);
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    border-radius: 12px 12px 0 0;
+}
+
+
+div.mainpage_celek:nth-child(1) > h2:nth-child(1) {
+    border-radius: 12px;
+}
+
+.Slider {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+
+#button-slide-left {
+    order: -1;
+    margin: 5px;
+    color: black;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 5px;
+    width: 2%;
+    height: 8%;
+}
+
+#button-slide-right {
+    margin: 5px;
+    color: black;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 5px;
+    width: 2%;
+    height: 8%;
+}
+
+
+.mySlides{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.MainPage_newest_reviews{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--color2);
+}
+
+.MainPage_newest_reviews_film{
+    display: flex;
+    box-shadow: 0px 6px 4px -5px var(--color3);
+}
+
+.MainPage_newest_reviews_film > div:nth-child(2) {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainpage_celek{
+    background-color: var(--color2);
+    box-shadow: 0px 8px 8px 9px var(--color3);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.mainpage_celek_footer{
+    background-color: var(--color2);
+    box-shadow: 0px 8px 8px 9px var(--color3);
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.mainpage_celek_footer div{
+    margin: 10px;
+    font-size: 1.6em;
+    color: white;
+}
+
+.mainpage_celek_footer div a{
+    text-decoration:none;
+    color: white;
+    margin:0;
+}
+
+.mainpage_celek_footer div a:hover {
+    color: var(--color3);
+}
+
+
+
+
+
+.card_slider {
+    background:transparent;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card_left_slider {
+    width:20%;
+    height:400px;
+    float:left;
+    overflow:hidden;
+    background:transparent;}
+.card_left_slider img {
+    width:100%;
+    height:100%;
+    border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+}
+
+.card_right_slider {
+    width:80%;
+    float:left;
+    background:var(--color1);
+    height:400px;
+    border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;}
+.card_right_slider h1 {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align:left;
+    font-size:40px;
+    margin:30px 0 0 0;
+    padding:0 0 0 40px;
+    letter-spacing:1px;
+}
+
+.card_right__details_slider  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    padding:0 0 0 40px;
+    margin:10px 0 0 0;}
+.card_right__details_slider li {
+    display:inline;
+    color:#e3e3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    padding:0 40px 0 0;
+}
+
+
+
+
+.card_right__review_slider p {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    padding:0 40px 0 40px;
+    letter-spacing:1px;
+    margin:10px 0 10px 0;
+    line-height:20px;
+}
+.card_right__review_slider a {
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    padding:0 0 0 40px;
+    color:#ffda00;
+    margin:0;
+}
+
+
+.card_right__review_slider a:hover {
+    color: var(--color1);
+    background-color: #ffda00;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+    background-size:12px 12px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+
+.card_right__rating__stars_slider{
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 0 40px 0 40px;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+
+/*//////////////////////*/
+
+.card_newest_review {
+    width: 50%;
+    background:transparent;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card_left_newest_review {
+    width:40%;
+    height:400px;
+    float:left;
+    overflow:hidden;
+    background:transparent;}
+.card_left_newest_review img {
+    width:100%;
+    height:100%;
+    border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+}
+
+.card_right_newest_review {
+    width:60%;
+    float:left;
+    background:var(--color1);
+    height:400px;
+    border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;}
+.card_right_newest_review h1 {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align:left;
+    font-size:40px;
+    margin:30px 0 0 0;
+    padding:0 0 0 40px;
+    letter-spacing:1px;
+}
+
+.card_right__details_newest_reviews ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    padding:0 0 0 40px;
+    margin:10px 0 0 0;}
+.card_right__details_newest_review  li {
+    display:inline;
+    color:#e3e3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    padding:0 40px 0 0;
+}
+
+
+
+
+.card_right__review_newest_review p {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    padding:0 40px 0 40px;
+    letter-spacing:1px;
+    margin:10px 0 10px 0;
+    line-height:20px;
+}
+.card_right__review_newest_review a {
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    padding:0 0 0 40px;
+    color:#ffda00;
+    margin:0;
+}
+
+
+.card_right__review_newest_review a:hover {
+    color: var(--color1);
+    background-color: #ffda00;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+    background-size:12px 12px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+
+.card_right__rating__stars_newest_review{
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 0 40px 0 40px;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+
+
+
+
+/*Chovani navbar*/
+@media screen and (max-width: 1686px) {
+    #navbarlistjs {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .imageInNavbar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 565px) {
+    .navbar_search {
+        display: none;
+    }
+}
+
+/*KONCI NAVBAR*/
+
+
+/*colors : svetla var(--color4  Oranz var(--color3  Seda var(--color2  tmava var(--color1*/
+
+/*REGISTRATION PAGE*/
+.ObsahMainPageregistration {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+.RegFormDiv {
+    width: 40%;
+    background: var(--color2);
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 900px) {
+    .RegFormDiv {
+        width: 750px;
+    }
+}
+
+.RegFormDiv fieldset {
+    border: none;
+}
+
+.RegFormDiv legend {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.RegFormDiv label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.RegFormDiv input[type="text"],
+.RegFormDiv input[type="email"],
+.RegFormDiv input[type="password"],
+.RegFormDiv select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: var(--color4);
+    color: var(--color1);
+    -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+.RegFormDiv input[type="text"]:focus,
+.RegFormDiv input[type="password"]:focus,
+.RegFormDiv input[type="email"]:focus {
+    background: var(--color3);
+}
+
+.RegFormDiv legend img {
+    object-fit: cover;
+    margin-right: 10px;
+    height: 26px;
+    width: 26px;
+    background: var(--color2);
+    border-radius: 2px;
+}
+
+.RegFormDiv input[type="submit"] {
+    position: relative;
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: var(--color1);
+    margin: 0 auto;
+    background: var(--color4);
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.RegFormDiv input[type="submit"]:hover {
+    background: var(--color3);
+}
+
+.RegistrationForm fieldset p{
+    color: red;
+}
+
+.CheckPodminky {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.CheckPodminky label {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1.2em;
+}
+
+.w3docs{
+    font-size: 1.2em;
+}
+
+
+/*CATEGORIES PAGE*/
+
+.ObsahCategories {
+    width: 80%;
+    background-color: var(--color1);
+    border-radius: 12px 12px 0 0;
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.LinkCtverec {
+    text-decoration: none;
+    min-width: 100px;
+    width: 32%;
+    min-height: 100px;
+    aspect-ratio: 1/0.7;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 5px;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    background-color: var(--color3);
+    max-width: 434px;
+    margin: 20px 20px 10px 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 6px var(--color4);
+}
+
+.CategoryName {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+    margin-top: 30%;
+}
+
+.CategoryName img {
+    width: 20%;
+    height: 20%;
+    min-width: 60px;
+    min-height: 60px;
+    transition: all 2s;
+}
+
+.CategoryName h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 3vw;
+    margin: 0;
+    transition: all 2s;
+}
+
+.description_of_category {
+    display: flex;
+    font-size: 1vw;
+    opacity: 0;
+    min-height: 50%;
+    transition: opacity 2s;
+    color: white;
+}
+
+.LinkCtverec:hover .description_of_category  {
+    display: flex;
+    opacity: 100%;
+}
+
+.LinkCtverec:hover .CategoryName{
+    width: min-content;
+    height: min-content;
+    margin: 0;
+}
+
+.LinkCtverec:hover .CategoryName img {
+    height: 0;
+    width: 0;
+    min-width: 0;
+    min-height: 0;
+}
+
+
+
+
+
+
+/*
+<=============================================================================================>
+
+
+
+_________________________________ List of films generated ________________________________
+
+
+<==============================================================================================>
+*/
+
+
+#listOfFilmsDependingOnCategory{
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+}
+
+.listOfFilmsH2 {
+    display: flex;
+    justify-content: center;
+    font-size: 4em;
+    font-family: sans-serif;
+}
+
+#listOfFilmsDependingOnCategory a{
+    width: 50%;
+    text-decoration: none;
+}
+
+
+
+.card {
+    width:680px;
+    height:400px;
+    background:transparent;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card_left {
+    width:40%;
+    height:400px;
+    float:left;
+    overflow:hidden;
+    background:transparent;}
+.card_left img {
+    width:100%;
+    height:100%;
+    border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+}
+
+.card_right {
+    width:60%;
+    float:left;
+    background:var(--color1);
+    height:400px;
+    border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;}
+.card_right h1 {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align:left;
+    font-size:40px;
+    margin:30px 0 0 0;
+    padding:0 0 0 40px;
+    letter-spacing:1px;
+}
+
+.card_right__details  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    padding:0 0 0 40px;
+    margin:10px 0 0 0;}
+.card_right__details  li {
+    display:inline;
+    color:#e3e3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    padding:0 40px 0 0;
+}
+
+
+
+
+.card_right__review p {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    padding:0 40px 0 40px;
+    letter-spacing:1px;
+    margin:10px 0 10px 0;
+    line-height:20px;
+}
+.card_right__review a {
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:14px;
+    padding:0 0 0 40px;
+    color:#ffda00;
+    margin:0;
+}
+
+
+.card_right__review a:hover {
+    color: var(--color1);
+    background-color: #ffda00;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+    background-size:12px 12px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+
+.card_right__rating__stars{
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 0 40px 0 40px;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+
+.pagination{
+    width: 60%;
+    margin: auto;
+    justify-content: end;
+    display: flex;
+    background-color: black;
+    -webkit-border-radius: 10px 10px 0 0;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    margin-top: 100px;
+}
+
+.pagination span{
+    color: #ffda00;
+    font-size: 2em;
+    margin: 10px;
+    padding: 3px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    margin: 10px;
+    padding: 3px;
+}
+
+.pagination a:hover {
+    background-color: #ffda00;
+    color: black;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<=============================================================================================>
+
+
+
+_________________________________ Movie Page and hodnoceni ________________________________
+
+
+<==============================================================================================>
+*/
+
+
+
+:root {
+    --textcolorMPHODN: white;
+    --backgroundOfHeaderMPHODN: var(--color1);
+    --colorOfmoviePopisekMPHODN: var(--color2);
+    --movieRankingcolorMPHODN: var(--color2);
+    --backgroundmoviePageHodnMPHODN: var(--color2);
+}
+
+.moviePageHodn{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 20px ;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+
+
+
+/*
+<=============================================================================================>
+
+
+
+______________ Hlavicka filmu tj/ obrazek nazev kategorie a tak __________________
+
+
+<==============================================================================================>
+*/
+
+
+.movieInfo{
+    text-align: center;
+    align-items: center;
+    background-color: var(--backgroundOfHeaderMPHODN);
+    display: flex;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 12px var(--color2);
+}
+
+.movieInfo h2{
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    color: var(--textcolorMPHODN);
+    font-size: 3.6vw;
+}
+
+.movieInfo p{
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    color: var(--textcolorMPHODN);
+    font-size: 1.2vw;
+}
+
+.movieInfo p img{
+    height: 1.6vw;
+    width: 1.6vw;
+}
+
+
+.movieInfo div p{
+    font-size: 1vw;
+
+}
+
+
+.movieDescription{
+    border-radius: 5px;
+}
+
+.movieInfo > img:nth-child(1) {
+    float: left;
+}
+
+.movieInfo img{
+    height: 17.6vw;
+    width: 14.6vw;
+}
+
+.movieRanking-average_stars {
+    height: 100%;
+    width: 12%;
+    /*! justify-items: center; */display: flex;
+    /*! align-content: center; *//*! align-items: ceter; */align-items: center;
+    justify-items: center;
+    justify-content: center;
+    order: 3;
+    font-size: 2vw;
+    color: #FFD700;
+}
+
+
+
+
+
+
+
+
+
+/*
+<=============================================================================================>
+
+
+
+______________ Popisek pribehu filmu. tlacitko na show less show more __________________
+
+
+<==============================================================================================>
+*/
+
+
+.moviePopisek{
+    margin-top: 120px;
+    background-color: var(--colorOfmoviePopisekMPHODN);
+    border-radius: 12px 12px 0px 12px;
+
+}
+
+.moviePopisek > h2:nth-child(1) {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: var(--color1);
+    color: white;
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.moviePopisek > p:nth-child(2) {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    font-size: 1.3em;
+    font-family: sans-serif;
+}
+
+#more {display: none;}
+
+#myBtn, .admin_review, #review_form_button {
+    float: right;
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px 0px 8px 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+#myBtn:hover {
+    box-shadow: rgba(0, 1, 0, .2) 0 2px 8px 0px
+}
+
+
+
+
+
+
+
+
+/*
+<=============================================================================================>
+
+
+
+______________Hodnoceni pridavane uzivateli a forma na zadavani hodnoceni __________________
+
+
+<==============================================================================================>
+*/
+
+.movieRanking{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0px 70px 0px;
+    background-color: var(--movieRankingcolorMPHODN);
+    border-radius: 10px;
+}
+
+.movieRanking h2{
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.movieRanking-userrank{
+    width: 80%;
+    margin: 10px 0px 10px 0px;
+    background-color: var(--color3);
+    padding: 10px;
+}
+
+.movieRanking-userrank h4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movieRanking-userrank h4 p{
+    margin: 0;
+}
+
+.movieRanking-userrank p{
+    margin: 0;
+    overflow-wrap: break-word;
+    overflow: hidden;
+}
+
+.admin_smazat{
+    float: right;
+}
+
+
+
+
+
+
+.user_movie_ranking{
+    background-color: var(--color2);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    border-radius: 10px;
+}
+
+.user_movie_ranking > label:nth-child(1) {
+    text-align: center;
+    font-family: sans-serif;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0px;
+    padding: 20px 0px 20px 0px;
+    background-color: var(--color1);
+    color: white;
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 50px;
+}
+
+.user_movie_ranking label{
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 3vw;
+}
+
+.user_movie_ranking button{
+    background-color: #344648;
+    width: min-content;
+}
+
+.user_movie_ranking span{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.user_movie_ranking span{
+    color: red;
+    margin: 0;
+    justify-content: center;
+}
+
+#review_form{
+    justify-content: center;
+    min-height: 100px;
+    resize: none;
+    margin: 0px 100px 0px 100px;
+    border-radius: 8px;
+}
+
+.user_movie_ranking > div:nth-child(4) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: end;
+    margin-bottom: 20px;
+}
+
+#review_form_button{
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: min-content;
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.user_movie_ranking > div:nth-child(4) > button:nth-child(2) {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.rating > input{
+    display:none;
+}
+
+.rating > label {
+    position: relative;
+    width: 1.1em;
+    font-size: 2vw;
+    color: #FFD700;
+    cursor: pointer;
+}
+
+.rating > label::before{
+    content: "\2605";
+    position: absolute;
+    opacity: 0;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+    opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+    opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{
+opacity: 0.4;
+    }
+
+#charCount {
+    margin: 0px 100px 0px auto;
+    font-size: 22px;
+    color: white;
+}
+
+
+
+
+.pls_login {
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+.pls_login a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.pls_login a:hover {
+    color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+<============================================================>
+
+
+
+______________   ZEBRICEK NEJLEPSICH PAGE __________________
+
+
+<==============================================================>
+*/
+
+
+.BestOf{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.BestOf h2{
+    font-family: sans-serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
+.card_bestof {
+    width: 488px;
+    height: 223px;
+    background:transparent;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card_left_bestof {
+    width: 30%;
+    height: 100%;
+    float:left;
+    overflow:hidden;
+    background:transparent;}
+.card_left_bestof img {
+    width:100%;
+    height:100%;
+    border-radius:10px 0 0 10px;
+    -webkit-border-radius:10px 0 0 10px;
+    border-radius:10px 0 0 10px;
+}
+
+.card_right_bestof {
+    width: 70%;
+    float:left;
+    background:var(--color1);
+    height:400px;
+    border-radius:0 10px 10px 0;
+    -webkit-border-radius:0 10px 10px 0;
+    border-radius:0 10px 10px 0;}
+.card_right_bestof h1 {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    text-align:left;
+    font-size:1.8em;
+    margin: 25px 0 0 0;
+    padding:0 0 0 40px;
+    letter-spacing:1px;
+}
+
+.card_right__details_bestof  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type:none;
+    padding:0 0 0 40px;
+    margin:10px 0 0 0;}
+.card_right__details_bestof  li {
+    display:inline;
+    color:#e3e3e3;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
+    font-size:0.8em;
+    padding:0 40px 0 0;
+}
+
+
+
+
+.card_right__review_bestof p {
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size:12px;
+    padding:0 40px 0 40px;
+    letter-spacing:1px;
+    margin:10px 0 10px 0;
+    line-height:20px;
+}
+.card_right__review_bestof a {
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.3em;
+    padding:0 0 0 40px;
+    color:#ffda00;
+    margin:0;
+}
+
+
+.card_right__review_bestof a:hover {
+    color: var(--color1);
+    background-color: #ffda00;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+    background-size:12px 12px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+
+.card_right__rating__stars_bestof{
+    color: yellow;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    padding: 0 40px 0 40px;
+    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+    line-height: 20px;
+}
+
+
+.BestOf_depending_on_category > div:nth-child(2) {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: center;
+}
+
+.BestOf_depending_on_category {
+    background-color: var(--color2);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 100px;
+    flex-direction: column;
+}
+
+.BestOf_depending_on_category > h2:nth-child(1) {
+    margin: 0px 0 20px 0;
+    background-color: var(--color1);
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+    color: white;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
+}
+
+.card_right__review_bestof_more {
+    margin: 0 25px 5px auto;
+}
+
+.card_right__review_bestof_more a{
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.3em;
+    padding:0 5px 0 55px;
+    color:#ffda00;
+    margin:0;
+}
+
+.card_right__review_bestof_more a:hover{
+    color: var(--color1);
+    background-color: #ffda00;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+    background-size:12px 12px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+
+.card_right__review_bestof_more_cat {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.card_right__review_bestof_more_cat a{
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.3em;
+    padding:0 5px 0 55px;
+    color:#ffda00;
+    margin:0;
+}
+
+.card_right__review_bestof_more_cat a:hover{
+    color: var(--color1);
+    background-color: #ffda00;
+    background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);
+    background-size:12px 12px;
+    background-repeat:no-repeat;
+    background-position: 10% 50%;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+@media screen and (max-width: 630px) {
+    .BestOf{
+        margin: 0;
+    }
+    .BestOf_depending_on_category {
+        min-width: 506px;
+        margin: 0;
+    }
+}
+
+
+
+
+
+
+
+
+

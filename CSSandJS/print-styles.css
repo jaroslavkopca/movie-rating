@@ -1,0 +1,88 @@
+body{
+    background: none;
+    margin: 0;
+}
+
+.ObsahMainPage{
+    display: block;
+}
+.navbar{
+    display: none;
+}
+
+.mainpage_celek{
+    background: none;
+    box-shadow: none;
+    margin: 0;
+    page-break-inside: avoid;
+    display: block;
+}
+
+.MainPage_newest_reviews_film{
+    box-shadow: none;
+}
+
+.card_slider{
+    background: none;
+    box-shadow: none;
+}
+
+#button-slide-right{
+    display: none;
+}
+
+#button-slide-left{
+    display: none;
+}
+
+.mainpage_celek_footer{
+    background: none;
+    box-shadow: none;
+}
+
+#more{
+    display: inline;
+}
+
+#myBtn{
+    display:none;
+}
+
+
+.BestOf{
+    display: block;
+}
+
+.BestOf_depending_on_category{
+    display: block;
+}
+.BestOf_depending_on_category > div:nth-child(2){
+    display: block;
+}
+#listOfFilmsDependingOnCategory{
+    display: block;
+}
+
+.movieInfo{
+    box-shadow: none;
+}
+
+.admin_smazat{
+    display: none;
+}
+
+.user_movie_ranking{
+    display: none;
+}
+
+.pagination{
+    box-shadow: none;
+}
+
+.RegFormDiv input[type="submit"]{
+    background: none;
+}
+.card_bestof,.card, .card_slider{
+    page-break-inside: avoid;
+}
+
